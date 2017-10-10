@@ -1,0 +1,9 @@
+.CartItem{
+  border: 1px solid #2e2e2e;
+  height: 40px;
+}
+
+.CartItem > div{
+  float: left;
+  margin-left: 100px;
+}
