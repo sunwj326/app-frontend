@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Clock from './components/Clock';
-import DraftBox from './components/DraftBox';
+import SyncBox from './components/SyncBox';
 import CartItem from './components/CartItem';
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Clock />
-        <DraftBox />
+        <SyncBox />
         <CartItem unitPrice="2"/>
       </div>
     );

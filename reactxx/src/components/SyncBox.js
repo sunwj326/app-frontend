@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class DraftBox extends Component {
+class SyncBox extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -29,4 +29,4 @@ class DraftBox extends Component {
 }
 
 
-export default DraftBox;
+export default SyncBox;
