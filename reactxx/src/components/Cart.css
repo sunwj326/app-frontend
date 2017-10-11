@@ -1,0 +1,8 @@
+.CartHead{
+  height: 40px;
+}
+
+.CartHead > div{
+  float: left;
+  margin-left: 100px;
+}

@@ -21,7 +21,7 @@ class DraftBox extends Component {
     return (
       <div>
         {/* call consume when input */}
-        <input name="producer" onChange={this.consume} value={null} />
+        <input name="producer" onChange={this.consume} defaultValue={null} />
         <span>{this.state.text}</span>
       </div>
     );

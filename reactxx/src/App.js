@@ -4,6 +4,7 @@ import './App.css';
 import Clock from './components/Clock';
 import DraftBox from './components/DraftBox';
 import CartItem from './components/CartItem';
+import Cart from './components/Cart';
 
 class App extends Component {
   render() {
@@ -18,7 +19,7 @@ class App extends Component {
         </p>
         <Clock />
         <DraftBox />
-        <CartItem unitPrice="2"/>
+        <Cart itemList={[1,2,3,4]}/>
       </div>
     );
   }
