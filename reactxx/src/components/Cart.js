@@ -8,6 +8,15 @@ class Cart extends Component{
     this.state = {
       itemList: props.itemList
     }
+    //this.handleDeleteItem = this.handleDeleteItem.bind(this);
+  }
+
+  handleDeleteItem(id){
+    var itemArray = new Array(this.state.itemList);
+    var newArray = itemArray.splice(0, 1);
+    this.setState({
+      itemList: itemArray
+    });
   }
 
   render(){
@@ -22,8 +31,8 @@ class Cart extends Component{
           <div>Operate</div>
         </div>
         <div className='CartBody'>
-          {this.state.itemList.map((item)=>
-            <CartItem price={item} />
+          {this.state.itemList.map((item, index)=>
+            <CartItem price={item} id={index} onDeleteItem={this.handleDeleteItem.bind(this, index)}/>
           )}
         </div>
       </div>

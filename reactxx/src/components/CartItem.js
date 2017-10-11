@@ -32,7 +32,7 @@ class CartItem extends Component {
           <input type='text' defaultValue={this.state.counter} value={this.state.counter} />
           <button onClick={this.changeCount.bind(this, +1)}>+</button>
         </div>
-        <div><button>Delete</button></div>
+        <div><button onClick={this.props.onDeleteItem}>Delete</button></div>
       </div>
     );
   }

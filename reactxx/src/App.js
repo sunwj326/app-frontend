@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Clock from './components/Clock';
-import CartItem from './components/CartItem';
 import Cart from './components/Cart';
 
 class App extends Component {
