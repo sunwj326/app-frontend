@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Clock from './components/Clock';
-import DraftBox from './components/DraftBox';
 import CartItem from './components/CartItem';
 import Cart from './components/Cart';
 
@@ -18,7 +17,6 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Clock />
-        <DraftBox />
         <Cart itemList={[1,2,3,4]}/>
       </div>
     );
