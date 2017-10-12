@@ -12,10 +12,11 @@ class Cart extends Component{
   }
 
   handleDeleteItem(id){
-    var itemArray = new Array(this.state.itemList);
-    var newArray = itemArray.splice(0, 1);
-    this.setState({
-      itemList: itemArray
+    this.setState(prevState=>{
+      prevState.itemList.splice(id, 1);
+      return {
+        itemList: prevState.itemList
+      }
     });
   }
 
