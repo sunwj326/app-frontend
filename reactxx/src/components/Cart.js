@@ -32,7 +32,7 @@ class Cart extends Component{
           <div>Operate</div>
         </div>
         <div className='CartBody'>
-          {this.state.itemList.map((item, index)=>
+          {this.props.itemList.map((item, index)=>
             <CartItem price={item} id={index} onDeleteItem={this.handleDeleteItem.bind(this, index)}/>
           )}
         </div>

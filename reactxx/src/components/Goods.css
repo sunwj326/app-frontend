@@ -1,0 +1,14 @@
+.goods {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid Green;
+  margin-left: 20px;
+}
+
+.goods:hover{
+  border-radius: 50%
+}
+
+
