@@ -58,15 +58,17 @@ class CIList extends Component {
   render(){
     return(
       <div>
-        <label>
-          Name:
-          <input type='text' name='name' value={this.state.name} onChange={this.handleChange} />
-        </label>
-        <label>
-          Pirce:
-          <input type='number' name='price' value={this.state.price} onChange={this.handleChange} />
-        </label>
-        <button onClick={this.handleSubmit}>Submit</button>
+        <form className='form-inline'>
+          <div className='form-group'>
+            <label for='itemName'>Name</label>
+            <input type='text' name='name' className="form-control" id='itemName' value={this.state.name} onChange={this.handleChange} />
+          </div>
+          <div className='form-group'>
+            <label for='itemPrice'>Pirce</label>
+            <input type='number' name='price' className="form-control" id='itemPrice' value={this.state.price} onChange={this.handleChange} />
+          </div>
+          <button onClick={this.handleSubmit} className='btn btn-default'>Submit</button>
+        </form>
         {/* <ul>
           {this.state.goods.map((item)=>
             <li key={item.id}><span>id:{item.id}</span><span>name:{item.name}</span>&nbsp;<span>price:{item.price}</span></li>

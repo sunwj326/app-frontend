@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Clock from './components/Clock';
-// import MobileStore from './components/MobileStore';
-import CIList from './components/CIList';
+import MobileStore from './components/MobileStore';
 
 class App extends Component {
   render() {
@@ -17,8 +16,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Clock />
-        {/* <MobileStore /> */}
-        <CIList />
+        <MobileStore />
       </div>
     );
   }

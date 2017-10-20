@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+const style = {
+  textAlign: 'center'
+}
+
 class Clock extends Component {
   constructor(props){
     super(props);
@@ -25,7 +29,7 @@ class Clock extends Component {
 
   render(){
     return(
-      <div>
+      <div style={style}>
         <h1>The Clock is :</h1>
         {/* format date as locale string */}
         <h2>{this.state.date.toLocaleTimeString()}</h2>
