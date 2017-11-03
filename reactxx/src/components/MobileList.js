@@ -44,8 +44,10 @@ class MobileList extends Component{
         <tfoot>
           <tr>
             <td colSpan="3">
-              <Button disabled={this.props.editState} onClick={this.props.toggleEdit}>Edit</Button>{' '}
-              <Button disabled={!this.props.editState || !isItemSelect} onClick={this.props.delSelected}>Delete</Button>{' '}
+              <Button disabled={this.props.editState} onClick={this.props.toggleEdit}>Edit</Button>
+              {' '}
+              <Button disabled={!this.props.editState || !isItemSelect} onClick={this.props.delSelected}>Delete</Button>
+              {' '}
               <Button disabled={!this.props.editState} onClick={this.props.toggleEdit}>Complete</Button>
             </td>
             <td>Summary:{total}</td>
