@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" x-ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Using Directives and Data Binding Syntax</title>
+</head>
+<body>
+	<div class="container" x-ng-init='peoples = [{first_name:"Federico",last_name:"Greenstead",gender:"Male",from:"France"},
+                                              {first_name:"Tiebold",last_name:"Barthrop",gender:"Male",from:"France"},
+                                              {first_name:"Kessia",last_name:"Davidov",gender:"Female",from:"France"},
+                                              {first_name:"Ashlee",last_name:"Pitblado",gender:"Female",from:"Italy"},
+                                              {first_name:"Ashley",last_name:"Geering",gender:"Female",from:"France"},
+                                              {first_name:"Bonita",last_name:"Icom",gender:"Female",from:"Italy"},
+                                              {first_name:"Thomasin",last_name:"Weekes",gender:"Female",from:"Germany"},
+                                              {first_name:"Amalia",last_name:"Bury",gender:"Female",from:"France"},
+                                              {first_name:"Frederique",last_name:"Dufer",gender:"Female",from:"France"},
+                                              {first_name:"Anderea",last_name:"Chugg",gender:"Female",from:"France"},
+                                              {first_name:"Bill",last_name:"Persent",gender:"Female",from:"France"},
+                                              {first_name:"Baily",last_name:"Howling",gender:"Male",from:"Germany"},
+                                              {first_name:"Horatio",last_name:"Siaghail",gender:"Male",from:"France"},
+                                              {first_name:"Gloriane",last_name:"Rosingdall",gender:"Female",from:"France"},
+                                              {first_name:"Ashlin",last_name:"Dilks",gender:"Male",from:"France"}]'>
+		<h3>Looping with the ng-repeat Directive</h3>
+    <br />
+    <input type="text" x-ng-model="name" />
+    <br />
+
+		<ul>
+			<li x-ng-repeat="people in peoples | filter:name | orderBy:gender">{{people.first_name | uppercase}} - {{ people.gender | lowercase }} - {{ people.from }}</li>
+		</ul>
+	</div>
+<script src="./angular.js"></script>
+</body>
+</html>
